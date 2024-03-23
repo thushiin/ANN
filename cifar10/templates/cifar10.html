@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/cifar10style.css">
+</head>
+<body>
+    <h1>IMAGE PREDICTION</h1>
+    <form action="predict" method="post" enctype="multipart/form-data">
+        <div>
+            <label>Insert an Image:</label>
+            <input type="file" name="image"><br>
+            <button type="submit">SUBMIT</button>
+        </div>
+        <h2>{{ prediction }}</h2>
+        
+    </form>
+</body>
+</html>
